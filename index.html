@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d89c675535.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/HA.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li> 
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#services">Expertise</a></li> 
+              <li><a href="#resume/cv">Resume/CV</a></li> 
+              <li><a href="#portfolio">Portfolio</a></li> 
+              <li><a href="#contact">Contact</a></li> 
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+        <p>SOFTWARE DEVELOPER</p>
+        <h1>Hi! I'm <span>Harita</span><br> Agarwal from Virginia.</h1>
+        </div>
+    </div>
+</div>
+<!---------------about---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img src="images/casual2.jpg" width="400" height="500"> 
+            </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                <p>As a dedicated and ambitious Computer Science student at Virginia Commonwealth University, I specialize in cybersecurity with a strong interest in mathematics, maintaining a 3.6 GPA. My academic journey is marked by a deep commitment to learning and a robust work ethic. Known for my adaptability and collaborative spirit, I have a keen interest in programming and problem-solving. Currently, I am honing my skills in C and have developed a solid foundation in Linux. My passion for technology extends beyond the classroom, as I actively seek opportunities to apply my knowledge in practical settings. My journey in computer science is driven by a desire to expand my skill set continuously. I am particularly fascinated by the challenges and innovations in the field of cybersecurity. The blend of analytical thinking and creativity required in this field aligns perfectly with my skills and interests.</p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li><span>Virginia Commonwealth University</span><br>Bachelor of Science in Computer Science, Concentration in Cybersecurity<br>Expected Graduation: December 2024<br> GPA: 3.6 | Dean’s List: Fall 2023</li>
+                    <li><span>J Sargent Reynolds Community College</span><br>Associate of Science in Computer Science<br>Graduation Date: May 2022<br>
+                        GPA: 3.9 Summa Cum Laude | Dean’s List: Fall 2020, Spring 2021, Fall 2021, Spring 2022</li>
+                    <li><span>CodeRVA Regional High School</span><br>GPA: 3.8<br> Graduation June 2022</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+                <ul>
+                    <li><span>Programming Languages</span><br> Python, Java, C, SQL, HTML, CSS, JavaScript</li>
+                    <li><span>Tools & Platforms</span><br> Linux, Unix, Microsoft Azure, GitHub, MySQL, PyCharm, IntelliJ, VS Code</li>
+                    <li><span>Certifications</span><br>Microsoft Azure AI-900, Introduction to Data Science by CISCO, Learning Linux Command Line, Cybersecurity Foundations </li>
+                    <li><span>Languages</span><br> Fluent in written and spoken in Hindi and English</li>
+                    <li><span>Additional skills</span><br>Strong analytical and problem-solving abilities, excellent communication and teamwork skills, and detail-oriented</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Senior Design Project: Executive Dashboard
+                    </span><br>Sponsored by Capital One<br>Collaborated with a team to develop a dashboard for data visualization and management using Single Sign-On, enhancing data accessibility for executives.  </li>
+                    <li><span>Web Development Intern</span><br>Christian’s Pizza, Tuckahoe, VA <br> Led a team redesign of the website, applying agile methodologies to improve user experience and functionality, showcasing leadership and project management skills. </li>
+                    <li><span>CodeScape</span><br>VCU MegaHack Hackathon<br>Worked with a team of four to create a website called CodeScape to convert your pseudocode into actual code using modern-day AI.   </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------Certifications---------->
+<div id="certifications">
+    <div class="container">
+        <h1 class="certifications">Certifications</h1>
+        <div class="certifications-list">
+            <!-- SAP Certification -->
+            <div class="certification">
+                <img src="images/sapcertificate.png" alt="SAP Certified Associate Certificate" class="certification-image">
+                <img src="images/sap-certified-associate-sap-s-4hana-cloud-private-e.8.png" alt="SAP Certified Associate Badge" class="certification-badge">
+                <h2>SAP Certified Associate</h2>
+                <p>Specialized in SAP S/4HANA Cloud Private Edition and Extended Warehouse Management (EWM).</p>
+            </div>
+            <!-- Microsoft Azure Certification -->
+            <div class="certification">
+                <img src="images/azure.png" alt="Microsoft Azure AI-900 Certification" class="certification-badge">
+                <h2>Microsoft Azure AI-900</h2>
+                <p>Certified in Microsoft Azure AI Fundamentals.</p>
+            </div>
+            <!-- Linux Command Line Certification -->
+            <div class="certification">
+                <img src="images/linux.png" alt="Linux Command Line Certification" class="certification-badge">
+                <h2>Linux Command Line</h2>
+                <p>Demonstrated expertise in Linux shell scripting and system administration tasks.</p>
+            </div>
+            <!-- Cybersecurity Foundations Certification -->
+            <div class="certification">
+                <img src="images/cybersecurity.png" alt="Cybersecurity Foundations Certification" class="certification-badge">
+                <h2>Cybersecurity Foundations</h2>
+                <p>Fundamental knowledge of cybersecurity principles and practices.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------Expertises-------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Expertise</h1>
+        <div class="services-list">
+           <!-- Web Development -->
+           <div class="service-card">
+               <i class="fa-brands fa-app-store"></i>
+               <h2>Web Development</h2>
+               <p>Proficient in front-end and back-end development. Capable of building complete web applications from scratch using Node.js, Python, PHP, etc.</p>
+               <a href="#">Learn more</a>
+           </div> 
+           <!-- Database Management -->
+           <div class="service-card">
+               <i class="fa-solid fa-database"></i>
+               <h2>Database Management</h2>
+               <p>Strong in database design principles and proficient in SQL and NoSQL databases, including MySQL and DynamoDB.</p>
+               <a href="#">Learn more</a>
+           </div>
+           <!-- RESTful API Development -->
+           <div class="service-card">
+               <i class="fa-solid fa-code"></i>
+               <h2>RESTful API Development</h2>
+               <p>Designing and implementing RESTful APIs with frameworks like Flask for scalable and efficient endpoints.</p>
+               <a href="#">Learn more</a>
+           </div> 
+           <!-- DevOps and Deployment -->
+           <div class="service-card">
+               <i class="fa-solid fa-cloud"></i>
+               <h2>DevOps and Deployment</h2>
+               <p>Expertise in cloud platforms (AWS, Azure), Docker, Kubernetes, and CI/CD pipelines for seamless deployment.</p>
+               <a href="#">Learn more</a>
+           </div> 
+           <!-- SAP EWM -->
+           <div class="service-card">
+               <i class="fa-solid fa-warehouse"></i>
+               <h2>SAP EWM</h2>
+               <p>Certified in SAP Extended Warehouse Management with experience in configuring storage types, RFUI, and end-to-end warehouse processes.</p>
+               <a href="#">Learn more</a>
+           </div>
+        </div>
+    </div>
+</div>
+<!----------resume/CV---->
+<div id="resume/cv">
+<div class="resume">
+    <h1 class="sub-title">Resume</h1>  
+    <!-- <a href="images/generic cv.pdf" download class="btn btn2">Download Cover Letter</a> -->
+    <a href="images/HaritaResume.pdf" download class="btn btn2">Download Resume</a>
+</div>
+</div>
+<!----------portfolio---->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="images/website1.png" />
+                <div class="layer">
+                    <h3>Mental Health Website</h3>
+                    <p>This Flask web app focuses on mental health awareness, allowing users to read articles, submit comments, and contact.</p>
+                    <a href="https://github.com/hpa179/mentalhealthawarness.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/codescape website.png" />
+                <div class="layer">
+                    <h3>CodeScape</h3>
+                    <p>CodeScape, a functional tool that converts your pseudocode into actual code using modern-day AI.</p>
+                    <a href="https://github.com/GokulCh/MegaHack-CodeScape.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/gymMS.png" />
+                <div class="layer">
+                    <h3>Gym Management System</h3>
+                    <p>Developed and implemented Gym Management System tailored specifically for fitness facilities, enhancing operational efficiency and member engagement.</p>
+                    <a href="https://github.com/hpa179/Gym-Management-System.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> haritaagarwal1@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1(804)698-0582</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/harita-agarwal/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/hpa179"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://sway.cloud.microsoft/OTSgrPgVZt9NDatQ?ref=Link&loc=play"><i class="fa-solid fa-file"></i></a>
+                    <a href="file:///C:/Users/agarw/OneDrive/Documents/portfolio/myportfolio-github/Portfolio-Website/index.html#"><i class="fa-solid fa-link"></i></a>
+                </div>
+                <!-- <a href="" class="btn btn2">Download CV</a> -->
+            </div>
+           <!-- Contact Form Section -->
+<div class="contact-right">
+    <!-- Google Sheets Form (uncomment if using Google Sheets) -->
+    <!-- 
+    <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required/>
+        <input type="email" name="Email" placeholder="Your Email" required/>
+        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+    </form> 
+    -->
+
+    <!-- Contact Form with mailto action -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:haritaagarwal1@gmail.com" method="post" enctype="text/plain">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <!-- Use the same button class here -->
+            <button type="submit" class="btn btn2">Send</button>
+        </form>
+    </section>
+
+    <span id="msg"></span>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Harita.</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right= "0";
+    }
+    function closemenu(){
+        sidemeu.style.right= "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzLJIjxCsqjNIEz4OMikpKki8B4SXRRivtLgyphdz2e3FwW3_Ph0FtZ6mSOZP59N2oqZg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+               msg.innerHTML="" 
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
